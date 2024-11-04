@@ -1,0 +1,65 @@
+
+
+.input-section{
+    background-color: #3F724C;
+    padding: 18px;
+    border-radius: 10px;
+    width: 50%;
+   display: flex;
+   flex-direction: row;
+   margin: auto;
+   margin-top: 20px;
+   box-shadow: 0 4px 6px #00000048;
+
+}
+.input-section .form-control{
+    border: 1px solid #325B3D;
+    background-color: #3F724C;
+}
+.input-section .form-control:focus{
+    background-color: #3F724C;
+}
+.input-section .btn-add {
+    background-color: transparent;
+    margin-left: 10px;
+    border-color: #4F8F5F;
+    border-radius: 10px;
+    padding:15px;
+    min-height:30px; 
+    min-width: 120px;
+}
+.input-section .btn-add:hover{
+    background-color: #4F8F5F;
+    margin-left: 10px;
+    border-color: #4F8F5F;
+}
+.list-group{
+   
+    padding: 0;
+}
+.list-group h4{
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    color: #284931;
+    margin-bottom: 10px;
+
+}
+.list-group .list {
+    background-color: #3F724C;
+    margin: auto;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px #00000066;
+    width: 50%;
+    border: 1px solid #325B3D;
+
+    border-radius: 5px;
+}
+.task-header{
+    background-color:#325B3D;
+    color: white;
+}
+
+.btn-delete{
+    background-color: #325B3D;
+}
