@@ -1,27 +1,32 @@
 import React, { useEffect, useState } from "react";
 import Form from "react-bootstrap/Form";
 import "./TodoApp.css";
+import { v4 as uuidv4 } from 'uuid';
 
-
-const AddTasks = ({setAddTodoResponse}) => {
+const AddTasks = () => {
   const [tasks, setTasks] = useState(" ");
-  const [toDo, setTodo] = useState([])
+  const [toDo, setTodo] = useState([
+    {
+      id:"",
+      task:""
+
+    }
+  ])
   
+
   const onSubmit = (e) => {
     e.preventDefault();
-     if(!toDo){
-     
+     if(!tasks){
+      alert("Enter A task")
      }
      else{
-      setTodo([...toDo, tasks]);
+    
+      toDo.push({id:uuidv4(),task:tasks})
       console.log(toDo);
-      
       localStorage.setItem("tasks", JSON.stringify(toDo));
-      setAddTodoResponse(toDo)
        document.getElementById("myId").value = "";
      }
-    
-    
+     
   }
 useEffect(() => {
     

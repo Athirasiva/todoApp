@@ -5,12 +5,12 @@ import Header from './Components/Header';
 import ViewTasks from './Components/ViewTasks';
 
 function App() {
-  const [addTodoResponse, setAddTodoResponse] = useState("")
+  // const [addTodoResponse, setAddTodoResponse] = useState("")
   return (
     <div className='App'>
       <Header />
-      <AddTasks setAddTodoResponse={setAddTodoResponse}/>
-      <ViewTasks addTodoResponse={addTodoResponse}/>
+      <AddTasks/>
+      // <ViewTasks />
     </div>
   );
 }
